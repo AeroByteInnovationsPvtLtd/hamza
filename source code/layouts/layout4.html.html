@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout4</title>
+    <link rel="stylesheet" href="/source code/layouts/layout4.css">
+    <style>
+        #wrapper{
+            border: solid brown;
+            margin:10px;
+        }
+        
+        #header {
+            height: 100px;
+            background-color:rgb(128, 216, 109);
+            margin: 10px;
+            border-radius: 10px;
+        }
+        
+        #bodi{
+            height: 600px;
+            margin:10px;
+        }
+        
+        #sidebar {
+            width:20%;
+            border-radius: 10px;
+            height: 600px;
+            float: left;
+        }
+        
+        #upperbar {
+            height: 400px;
+            background-color: blue;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        
+        #lowerbar {
+            height: 190px;
+            background-color: lightpink;
+            border-radius: 10px;
+        }
+        
+        #main-bar {
+            width: 79%;
+            background-color: yellow;
+            height: 600px;
+            float:right;
+            border-radius: 10px;
+        }
+        
+        #footer{
+            height: 100px;
+            background-color:coral;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        
+        /* Media Queries */
+        
+        /* For screens with a maximum width of 768px (tablets and smaller) */
+        @media only screen and (max-width: 768px) {
+            #sidebar {
+                width: 40%;
+            }
+            #main-bar {
+                width: 59%;
+            }
+        }
+        
+        /* For screens with a maximum width of 480px (mobile devices) */
+        @media only screen and (max-width: 480px) {
+            #sidebar {
+                width: 100%;
+                float: none;
+            }
+            #main-bar {
+                width: 100%;
+                float: none;
+            }
+            #upperbar, #lowerbar {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header"></div>
+        <div id="bodi">
+            <div id="sidebar">
+                <div id="upperbar"></div>
+                <div id="lowerbar"></div>
+            </div>
+            <div id="main-bar"></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>

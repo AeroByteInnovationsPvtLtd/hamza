@@ -1,0 +1,46 @@
+*{padding: 0;
+    margin: 0;
+}
+
+#wrapper {
+    border:solid gray;
+    padding: 10px;
+}
+#header{
+    background-color:darkslateblue;
+    height: 100px;
+    padding: 10px;
+}
+#logo {
+    height: 100px;
+    width: 150px;
+    background-color: crimson;
+    
+}
+#navbar {
+    height: 50px;
+    background-color: yellowgreen;
+    margin-top: 10px;
+}
+#content {
+    
+    margin-top: 10px;
+}
+#content::after{content: " ";display: block;clear: both;}
+#left-content {
+    height: 600px;
+    background-color:greenyellow;
+    width:25%;
+    float: left;
+}
+#right-content {
+    height: 600px;
+    background-color: fuchsia;
+    width:74%;
+    float: right;
+}
+#footer {
+    height:100px;
+    background-color:rebeccapurple;
+    margin-top: 10px;
+}

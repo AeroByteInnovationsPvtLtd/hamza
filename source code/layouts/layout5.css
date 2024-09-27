@@ -1,0 +1,31 @@
+#icon-bar{
+    border:solid brown;
+    width:520px;
+    margin: 100px auto;
+}
+#icon-bar >.icon-box{
+    display: inline-block;
+    height: 80px;
+    width:80px;
+    border:1px solid gray;
+    background-image: url(https://th.bing.com/th/id/OIP.WOthKFnI5ONgUg0CieJQpAHaGP?rs=1&pid=ImgDetMain);
+    background-repeat: no-repeat;
+}
+#insta{
+    background-position:-10px -160px;
+}
+#linkedin{
+    background-position:-160px -10px;
+}
+#skype{
+    background-position: -385px -308px;
+}
+#caller{
+    background-position: -235px -235px;
+}
+#twitter{
+    background-position: -12px -12px;
+}
+#snap{
+    background-position: -86px -235px;
+}

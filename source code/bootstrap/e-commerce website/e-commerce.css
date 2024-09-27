@@ -1,0 +1,58 @@
+#header .fixed-top{
+    box-shadow: 0 0.125rem 0.675rem rgb(0 0 0 / 5%);
+}
+#header .navbar-nav .nav-item .nav-link{
+    color:var(--text-black);
+    padding:0.5rem 1rem;
+    text-align: center;
+}
+#header .navbar-nav .nav-item .nav-link:hover,  
+#header .navbar-nav .nav-item .nav-link .active {
+    color:red;
+}
+#header .navbar-toggle-icon{
+    width:unset;
+    height: unset;
+}
+#header .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.home .home-banner-1,
+.home .home-banner-2{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% center;
+    min-height: 650px;
+    position: relative;
+}
+.home .home-banner-1{
+    background-image:url('/images/bgimg.jpg');
+}
+.home .home-banner-2{
+    background-image:url('/images/bgimg2.jpg');
+}
+.home .home-banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-110%, -50%);
+}
+.home .home-banner .home-banner-text h1{
+    font: size 6rem;
+}
+.home .carousel-indicators [data-bs-target]{
+    background-color: red;
+    width: 2.5rem;
+    height: 0.313rem;
+}
+.home .carousel-control-next-icon,
+.home .carousel-control-prev-icon{
+    background: transparent;
+    color: red;
+}
+.home .slider-icon {
+    font-size: 3rem;
+    font-weight: 600;
+    color: red;
+}

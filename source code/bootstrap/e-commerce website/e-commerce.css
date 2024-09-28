@@ -23,14 +23,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 90% center;
-    min-height: 650px;
+    min-height: 700px;
     position: relative;
 }
 .home .home-banner-1{
-    background-image:url('/images/bgimg.jpg');
+    background-image:url('/images/woman-7106310.jpg');
 }
 .home .home-banner-2{
-    background-image:url('/images/bgimg2.jpg');
+    background-image:url('/images/woman-7084058.jpg');
 }
 .home .home-banner-text{
     position: absolute;

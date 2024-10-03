@@ -81,10 +81,10 @@ p{
     position:relative;
 } 
 .home .home-banner-1{
-    background-image:url('/images/sl-1.jpg');
+    background-image:url('/source code/bootstrap/e-commerce website/images/sl-1.jpg');
 }
 .home .home-banner-2{
-    background-image:url('/images/sl-2.jpg');
+    background-image:url('/source code/bootstrap/e-commerce website/images/sl-2.jpg');
 }
 .home .home-banner .home-banner-text{
     position:absolute;

@@ -6,7 +6,18 @@ menubar.onclick = () =>{
     navbar.classList.toggle('active')
 }
 
-// Initialization for ES Users
-import { Input, initMDB } from "mdb-ui-kit";
+function openPopup() {
+    document.getElementById('popup-bg').style.display = 'block';
+}
 
-initMDB({ Input });
+// Function to close the popup
+function closePopup() {
+    document.getElementById('popup-bg').style.display = 'none';
+}
+
+// Form submission handler
+document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form from refreshing the page
+    alert('Appointment booked successfully!');
+    closePopup(); // Close the popup after booking
+});

@@ -15,7 +15,7 @@
       <section id="header">
         <nav class="navbar navbar-expand-lg bg-white fixed-top">
           <div class="container">
-            <a class="navbar-brand" href="#products">
+            <a class="navbar-brand" href="#">
               𝕳𝖎𝖏𝖆𝖇𝖎 𝕰𝖑𝖊𝖌𝖆𝖓𝖈𝖊
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -439,7 +439,7 @@
                   </li>
                   <li class="d-flex align-items-center">
                       <span class="pe-3 ti-mobile fs-5"></span>
-                      <p><a href="">+91 999-999-9999</a></p>
+                      <p><a href="">+91 6303-450-600</a></p>
                   </li>
                   <li class="d-flex align-items-center">
                       <span class="pe-3 ti-envelope fs-5"></span>
@@ -448,50 +448,32 @@
                 </ul>
             </div>
             <div class="col-lg-7 col-md-7 pt-lg-0 pt-md-0 pt-4">
-              <form>
-                  <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Email address">
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                            <input class="textarea" name="message" cols="30" rows="4" id="message" placeholder="Enter your message">
-                        </div>
-                      </div>
-                      <div class="col-md-12"> 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                  Send Message
-                          </button>
-
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Form Submition</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          Your info has been submitted successfully.
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
+              
+              <form id="contactForm" class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                  <div class="invalid-feedback">
+                    Please enter your name.
                   </div>
-                                        </div>
-                                    </div>
-                                </form>
-                              </div>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                  <div class="invalid-feedback">
+                    Please enter a valid email address.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="3" required></textarea>
+                  <div class="invalid-feedback">
+                    Please enter your message.
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-danger">Submit</button>
+              </form>
+            </div>
                             </div>
                           </div>
                         </div>
@@ -506,7 +488,7 @@
               <p class="my-0">Copyright © 2024 <a href="#">E-SHOP</a> All Rights Reserved.</p>
           </div>
           <div class="col-12 col-lg-6 p-1 p-lg-3 text-center text-lg-end">
-              <p>Designed by <a href="#" target=" _blank">MD HAMZA</a>.</p>
+              <p>Designed by <a href="" target=" _blank">Aerobyte Innovations</a>.</p>
           </div>
         </div>
       </div>

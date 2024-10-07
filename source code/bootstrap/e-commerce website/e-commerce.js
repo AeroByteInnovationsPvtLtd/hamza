@@ -48,37 +48,18 @@ navBar.forEach(function(a){
     })
 })
 
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('contactForm');
 
-const form = document.querySelector('form');
-const submitBtn = document.querySelector('#submit-btn');
-const modalBody = document.querySelector('#modal-body');
-
-submitBtn.addEventListener('click', (e) => {
-  e.preventDefault(); // prevent form submission
-
-  const name = document.querySelector('#name').value.trim();
-  const email = document.querySelector('#email').value.trim();
-  const message = document.querySelector('#message').value.trim();
-
-  if (!name || !email || !message) {
-    modalBody.textContent = 'Please fill in all fields.';
-    $('#exampleModal').modal('show');
-    return;
-  }
-
-  if (!validateEmail(email)) {
-    modalBody.textContent = 'Invalid email address.';
-    $('#exampleModal').modal('show');
-    return;
-  }
-
-  // if all data is valid, display success message
-  modalBody.textContent = 'Your info has been submitted successfully.';
-  $('#exampleModal').modal('show');
+  form.addEventListener('submit', function (event) {
+    if (!form.checkValidity()) {
+      event.preventDefault();
+      event.stopPropagation();
+      alert('Please fill out all required fields correctly.');
+    } else {
+      event.preventDefault();
+      alert('Thank you! Your form has been submitted successfully.');
+    }
+    form.classList.add('was-validated');
+  }, false);
 });
-
-function validateEmail(email) {
-  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  return emailRegex.test(email);
-}
-

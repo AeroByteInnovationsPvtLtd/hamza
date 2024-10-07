@@ -17,28 +17,44 @@
     <header>
         
         <div class="logo"><img src="/images/hospital images/logo3.png" alt=""></div>
-
         <nav class="navbar">
-            <a href="#Home">Home</a>
-            <a href="#about-heading">About</a>
-            <a href="#main-doctors">Service</a>
-            <a href="#main-doctors">Gallery</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#our-service">Service</a>
+            <a href="#doctors">Gallery</a>
             <a href="#review">Blog</a>
             <a href="#main-footer">Contact</a>
         </nav>
 
         <div class="right-icons">
             <div id="menu-bars" class="fas fa-bars"></div>
-            <div class="btn">Make Appointment</div>
+            <button class="btn appointment-btn" onclick="openPopup()">Make Appointment</button>
         </div>
-
     </header>
 
     <!-- header section ended -->
+    <div class="popup-bg" id="popup-bg">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup()">X</button>
+            <h2>Book an Appointment</h2>
+            
+            <form id="appointmentForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
-    <!-- Home section started -->
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
 
-        <div class="main-home">
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <div class="main-home">
 
             <div class="home">
                 <div class="home-left-content">
@@ -49,7 +65,7 @@
                 
                         <div class="home-btn">
                             <a href="">Read More</a>
-                            <a class="homebtnsec" href="">Appointment</a>
+                            <a class="homebtnsec btn appointment-btn"onclick="openPopup()">Make Appointment</a>
                         </div>
                         
                     </div>
@@ -87,10 +103,12 @@
             </div>
         </div>
 
+        
+
     <!-- home section ends -->
 
     <!-- About us section started -->
-
+        <section class="about">
         <div class="main-about">
 
             <div class="about-heading">About Us</div>
@@ -114,12 +132,12 @@
                 </div>
             </div>
         </div>
-
+    </section>
     <!-- About us section ends -->
 
     <!-- our doctors -->
 
-        <div class="main-doctors">
+        <div class="docters main-doctors">
             <div class="doctors-heading">
                 <h2>Our Doctors</h2>
             </div>
@@ -359,11 +377,34 @@
     <!-- customer review -->
 
 
-    <!-- footer -->
+<div class="main-footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>Doctery Hospital</h3>
+            <p>Providing exceptional healthcare and services to our community.</p>
+            <p>
+                <strong>Address:</strong> 123 Main Street, City, Country<br>
+                <strong>Email:<a href="mailto:hr@aerobyte.in"></strong> info@aerobyte.in<br></a>
+                <p><strong>Phone:</strong> +123-456-7890</p>
+            </p>
+        </div>
+        </div>
 
-    <div class="main-footer">
-        
+        <div class="footer-section social-media">
+            <h4>Follow Us</h4>
+            <a href="https://aerobyte.in/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/aerobyte_innovations/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/aerobyte-innovations/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
     </div>
+
+    <div class="footer-bottom">
+        &copy; 2024 Dectery Hospital. All rights reserved.
+    </div>
+</div>
+<!-- footer ended -->
+
         
     <!-- footer ended -->
 

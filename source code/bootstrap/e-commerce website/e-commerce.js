@@ -39,27 +39,68 @@ function scrollTopBack(){
 scrollTopBack();
 
 
-// nav hide  
-let navBar = document.querySelectorAll('.nav-link');
-let navCollapse = document.querySelector('.navbar-collapse.collapse');
-navBar.forEach(function(a){
-    a.addEventListener("click", function(){
-        navCollapse.classList.remove("show");
-    })
-})
+// // nav hide  
+// let navBar = document.querySelectorAll('.nav-link');
+// let navCollapse = document.querySelector('.navbar-collapse.collapse');
+// navBar.forEach(function(a){
+//     a.addEventListener("click", function(){
+//         navCollapse.classList.remove("show");
+//     })
+// })
 
-document.addEventListener('DOMContentLoaded', function () {
+(() => {
+  'use strict';
+
   const form = document.getElementById('contactForm');
-
-  form.addEventListener('submit', function (event) {
-    if (!form.checkValidity()) {
-      event.preventDefault();
+  
+  form.addEventListener('submit', event => {
+      event.preventDefault(); // Prevent default form submission
       event.stopPropagation();
-      alert('Please fill out all required fields correctly.');
-    } else {
-      event.preventDefault();
-      alert('Thank you! Your form has been submitted successfully.');
-    }
-    form.classList.add('was-validated');
+
+      if (form.checkValidity()) {
+          // If form is valid, show success modal
+          var successModal = new bootstrap.Modal(document.getElementById('successModal'));
+          successModal.show();
+      } else {
+          // If form is invalid, show error modal
+          var errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+          errorModal.show();
+      }
+
+      form.classList.add('was-validated'); // Add Bootstrap validation styles
   }, false);
-});
+})();
+
+function addToCart(productId, productName, productPrice) {
+  const existingProduct = cart.find(product => product.id === productId);
+  if (existingProduct) {
+    existingProduct.quantity++;
+  } else {
+    cart.push({ id: productId, name: productName, price: productPrice, quantity: 1 });
+  }
+  updateCartTable();
+  localStorage.setItem('cart', JSON.stringify(cart));
+  window.location.href = 'cart.html';
+}
+
+let cart = [];
+
+function updateCartTable() {
+  const cartTableBody = document.getElementById('cart-table-body');
+  cartTableBody.innerHTML = '';
+  let total = 0;
+  cart.forEach(product => {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${product.name}</td>
+      <td>${product.quantity}</td>
+      <td>$${product.price}</td>
+      <td>$${product.price * product.quantity}</td>
+      <td><button class="remove-from-cart" data-product-id="${product.id}">Remove</button></td>
+    `;
+    cartTableBody.appendChild(row);
+    total += product.price * product.quantity;
+  });
+  document.getElementById('cart-total-price').textContent = total.toFixed(2);
+}
+

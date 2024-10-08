@@ -387,7 +387,7 @@ header{
     background-color: var(--secondcolor);
     color: white;
     border:none;
-    padding: 1.5rem 3.5rem;
+    padding: 2.5rem 3.5rem;
 }
 .main-doctors{
     padding: 2rem 7%;
@@ -400,7 +400,7 @@ header{
     background-repeat: no-repeat;
 }
 .doctors-heading{
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
    margin: 4rem;
    color: var(--maincolor);
@@ -415,7 +415,7 @@ header{
 .doc-poster{
     flex: 1 1 300px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    position: relative;
+    position:relative;
     overflow: hidden;
     
 }
@@ -514,15 +514,16 @@ header{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 1rem;
     text-align: center;
 }
 .inner-services{
+    width: 100%;
+    height:100%;
     flex: 1 1 300px;
     padding: 3rem 2rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border: 2px solid var(--textcolor);
-    
 }
 .inner-services:hover{
     transform: translateY(-10px);

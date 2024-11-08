@@ -1,0 +1,454 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripSeva</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Link -->
+
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+<style>
+/* Home Section Start */
+.booking{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/background\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:-50px;
+}
+.booking .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.booking .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.booking .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "France";}
+    10%{content: "Spain";}
+    20%{content: "United States";}
+    30%{content: "China";}
+    40%{content: "India";}
+    50%{content: "Pakistan";}
+    60%{content: "Italy";}
+    70%{content: "Turkey";}
+    80%{content: "Mexico";}
+    90%{content: "Germany";}
+    100%{content: "United kingdom";}
+} 
+.booking .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.booking .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.booking .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .booking{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .booking .content h5{
+        font-size: 25px;
+    }
+    .booking .content h1{
+        font-size: 38px;
+    }
+    .booking .content p{
+        font-size: 13px;
+    }
+}
+.forms {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    background-color: #c6efce;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+    background-color: #c6efce;
+}
+
+.modal-header {
+    background-color: #8bc34a;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .forms {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .forms {
+        width: 90%;
+    }
+}
+
+</style>
+</head>
+<body>
+
+
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+    <div class="container">
+    <a class="navbar-brand" href="index.html" id="logo"><span>Trip</span>Seva</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+    <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+            <a class="nav-link" id="flight-link" href="#">Flight</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="train-link" href="#">Train</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="bus-link" href="#">Bus</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="cab-link" href="#">Cab</a>
+        </li>
+    </ul>
+    </div>
+</nav>
+<section class="booking">
+    <div class="forms">
+    <div class="form-container">
+        <div id="flight-form" style="display: none;">
+            <!-- Flight form here -->
+            <form id="flight-form-validation">
+                <div class="mb-3">
+                    <label for="flight-from" class="form-label">From:</label>
+                    <input type="text" class="form-control" id="flight-from" placeholder="City or Airport Code" required>
+                    <div class="invalid-feedback">Please enter a valid departure city or airport code.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="flight-to" class="form-label">To:</label>
+                    <input type="text" class="form-control" id="flight-to" placeholder="City or Airport Code" required>
+                    <div class="invalid-feedback">Please enter a valid arrival city or airport code.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="flight-date" class="form-label">Departure Date:</label>
+                    <input type="date" class="form-control" id="flight-date" required>
+                    <div class="invalid-feedback">Please enter a valid departure date.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="flight-return-date" class="form-label">Return Date:</label>
+                    <input type="date" class="form-control" id="flight-return-date" required>
+                    <div class="invalid-feedback">Please enter a valid return date.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="flight-passengers" class="form-label">Number of Passengers:</label>
+                    <input type="number" class="form-control" id="flight-passengers" required>
+                    <div class="invalid-feedback">Please enter a valid number of passengers.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="flight-class" class="form-label">Class:</label>
+                    <select class="form-select" id="flight-class" required>
+                        <option value="">Select a class</option>
+                        <option value="economy">Economy</option>
+                        <option value="premium-economy">Premium Economy</option>
+                        <option value="business">Business</option>
+                        <option value="first-class">First Class</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a valid class.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Book Flight</button>
+            </form>
+        </div>
+        <div id="train-form" style="display: none;">
+            <!-- Train form here -->
+            <form id="train-form-validation">
+                <div class="mb-3">
+                    <label for="train-from" class="form-label">From:</label>
+                    <input type="text" class="form-control" id="train-from" placeholder="Station Code" required>
+                    <div class="invalid-feedback">Please enter a valid departure station code.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="train-to" class="form-label">To:</label>
+                    <input type="text" class="form-control" id="train-to" placeholder="Station Code" required>
+                    <div class="invalid-feedback">Please enter a valid arrival station code.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="train-date" class="form-label">Departure Date:</label>
+                    <input type="date" class="form-control" id="train-date" required>
+                    <div class="invalid-feedback">Please enter a valid departure date.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="train-return-date" class="form-label">Return Date:</label>
+                    <input type="date" class="form-control" id="train-return-date" required>
+                    <div class="invalid-feedback">Please enter a valid return date.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="train-passengers" class="form-label">Number of Passengers:</label>
+                    <input type="number" class="form-control" id="train-passengers" required>
+                    <div class="invalid-feedback">Please enter a valid number of passengers.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="train-class" class="form-label">Class:</label>
+                    <select class="form-select" id="train-class" required>
+                        <option value="">Select a class</option>
+                        <option value="second-class">Second Class</option>
+                        <option value="sleeper-class">Sleeper Class</option>
+                        <option value="third-class-ac">Third Class AC</option>
+                        <option value="second-class-ac">Second Class AC</option>
+                        <option value="first-class-ac">First Class AC</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a valid class.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Book Train</button>
+            </form>
+        </div>
+        <div id="bus-form" style="display: none;">
+            <!-- Bus form here -->
+            <form id="bus-form-validation">
+                <div class="mb-3">
+                    <label for="bus-from" class="form-label">From:</label>
+                    <input type="text" class="form-control" id="bus-from" placeholder="City" required>
+                    <div class="invalid-feedback">Please enter a valid departure city.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="bus-to" class="form-label">To:</label>
+                    <input type="text" class="form-control" id="bus-to" placeholder="City" required>
+                    <div class="invalid-feedback">Please enter a valid arrival city.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="bus-date" class="form-label">Departure Date:</label>
+                    <input type="date" class="form-control" id="bus-date" required>
+                    <div class="invalid-feedback">Please enter a valid departure date.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="bus-return-date" class="form-label">Return Date:</label>
+                    <input type="date" class="form-control" id="bus-return-date" required>
+                    <div class="invalid-feedback">Please enter a valid return date.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="bus-passengers" class="form-label">Number of Passengers:</label>
+                    <input type="number" class="form-control" id="bus-passengers" required>
+                    <div class="invalid-feedback">Please enter a valid number of passengers.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="bus-class" class="form-label">Class:</label>
+                    <select class="form-select" id="bus-class" required>
+                        <option value="">Select a class</option>
+                        <option value="non-ac">Non-AC</option>
+                        <option value="ac">AC</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a valid class.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Book Bus</button>
+            </form>
+        </div>
+        <div id="cab-form" style="display: none;">
+            <!-- Cab form here -->
+            <form id="cab-form-validation">
+                <div class="mb-3">
+                    <label for="cab-from" class="form-label">From:</label>
+                    <input type="text" class="form-control" id="cab-from" placeholder="Pickup Location" required>
+                    <div class="invalid-feedback">Please enter a valid pickup location.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="cab-to" class="form-label">To:</label>
+                    <input type="text" class="form-control" id="cab-to" placeholder="Drop Location" required>
+                    <div class="invalid-feedback">Please enter a valid drop location.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="cab-date" class="form-label">Date:</label>
+                    <input type="date" class="form-control" id="cab-date" required>
+                    <div class="invalid-feedback">Please enter a valid date.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="cab-time" class="form-label">Time:</label>
+                    <input type="time" class="form-control" id="cab-time" required>
+                    <div class="invalid-feedback">Please enter a valid time.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="cab-passengers" class="form-label">Number of Passengers:</label>
+                    <input type="number" class="form-control" id="cab-passengers" required>
+                    <div class="invalid-feedback">Please enter a valid number of passengers.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Book Cab</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Success popup -->
+<div class="modal fade" id="success-modal" tabindex="-1" aria-labelledby="success-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="success-modal-label">Booking Successful!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Your booking has been successful. You will receive a confirmation email with the details of your booking.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+ <!-- Footer Start -->
+ <footer id="footer">
+    <h1><span>T</span>ravel</h1>
+    <p>Travel far, explore deeper, and cherish every moment with us.</p>
+    <div class="social-links">
+      <a href="https://x.com/Aerobyte_17"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61566122816791"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/aerobyte_innovations/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div class="credit">
+      <p>Designed By <a href="#">Vidya</a></p>
+    </div>
+    <div class="copyright">
+      <p>&copy;Copyright 2024. All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+<script>
+    // Get the navigation menu items and forms
+    const navLinks = document.querySelectorAll('.nav-link');
+    const forms = document.querySelectorAll('.forms > div > div');
+
+    // Add event listeners to navigation menu items
+    navLinks.forEach((link) => {
+        link.addEventListener('click', (e) => {
+            // Get the corresponding form based on the link ID
+            const formId = e.target.id.replace('-link', '-form');
+            const form = document.getElementById(formId);
+
+            // Toggle the visibility of the form
+            forms.forEach((form) => {
+                form.style.display = 'none';
+            });
+            form.style.display = 'block';
+        });
+    });
+
+    // Add event listeners to forms for validation
+    const formsValidation = document.querySelectorAll('form');
+    formsValidation.forEach((form) => {
+        form.addEventListener('submit', (e) => {
+            // Prevent default form submission
+            e.preventDefault();
+
+            // Get all input fields in the form
+            const inputFields = form.querySelectorAll('input, select');
+
+            // Validate each input field
+            inputFields.forEach((inputField) => {
+                // Check if input field is required
+                if (inputField.required) {
+                    // Check if input field is empty
+                    if (inputField.value === '') {
+                        // Add invalid feedback
+                        inputField.classList.add('is-invalid');
+                    } else {
+                        // Remove invalid feedback
+                        inputField.classList.remove('is-invalid');
+                    }
+                }
+            });
+
+            // Check if all input fields are valid
+            const isValid = Array.from(inputFields).every((inputField) => {
+                return !inputField.classList.contains('is-invalid');
+            });
+
+            // If all input fields are valid, show success popup
+            if (isValid) {
+                const successModal = document.getElementById('success-modal');
+                const modal = new bootstrap.Modal(successModal);
+                modal.show();
+            }
+        });
+    });
+</script>
+</body>
+</html>
+
+
+

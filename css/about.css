@@ -1,0 +1,64 @@
+.tablinks
+{
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    color: black;
+    padding: 20px;
+    padding-left: 30px;
+    /*! padding-right: 200px; */
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    background: #09adc7;
+    background: -moz-linear-gradient(-45deg, #09adc7 0%, #02ddff 100%);
+    background: -webkit-linear-gradient(-45deg, #09adc7 0%,#02ddff 100%);
+    background: linear-gradient(135deg, #09adc7 0%,#02ddff 100%);
+    background-color: rgba(0, 0, 0, 0);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#09adc7', endColorstr='#02ddff',GradientType=1 );
+   
+ 
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #5A55A3;
+    color: #fff;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #5A55A3;
+    color: #fff;
+}
+.tab button.active:after {
+
+    content: '' !important;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-top: -13px;
+    border-left: 0;
+    border-bottom: 13px solid transparent !important;
+    border-top: 13px solid transparent !important;
+    border-left: 10px solid  #09adc7 !important;
+
+}
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border-left: none;
+    height: 300px;
+}

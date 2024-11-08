@@ -1,0 +1,237 @@
+/* Global Styles */
+
+/* @import '../src/./stylesheets/variables.scss'; */
+@import "~font-awesome/css/font-awesome.css";
+@import url("https://fontlibrary.org/face/droid-arabic-kufi");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/earlyaccess/droidarabickufi.css");
+
+@font-face {
+    font-family: "SourceSansPro-Regular";
+    src: url("./fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SourceSansPro-Regular";
+    src: url("./fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "SourceSansPro-Bold";
+    src: url("./fonts/SourceSansPro-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "SourceSansPro-Bold";
+    src: url("./fonts/SourceSansPro-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Droid Arabic Kufi";
+    src: url("./fonts/DroidArabicKufi.eot");
+    src: url("./fonts/DroidArabicKufi.eot?#iefix") format("embedded-opentype"), url("./fonts/DroidArabicKufi.svg") format("svg"),
+        url("./fonts/DroidArabicKufi.woff") format("woff"), url("./fonts/DroidArabicKufi.woff2") format("woff"),
+        url("./fonts/DroidArabicKufi.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+h1 {
+    color: #369;
+    font-family: "SourceSansPro-Regular", Helvetica, sans-serif;
+    font-size: 250%;
+}
+/* h2,
+h3 {
+    color: #444;
+    font-family: "SourceSansPro-Regular", Helvetica, sans-serif;
+    font-weight: lighter;
+} */
+[lang="ar"] body{
+    font-family: "Droid Arabic Kufi";
+}
+
+body {
+ 
+    font-family: "Droid Arabic Kufi","SourceSansPro-Regular",Arial, Helvetica, sans-serif,  !important;
+} 
+
+body {
+    margin: 2em;
+}
+body,
+input[text],
+button {
+    color: #333;
+    font-family: Cambria, Georgia;
+}
+a {
+    cursor: pointer;
+    cursor: hand;
+}
+p {
+    color: #6b6b6b;
+}
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #ffffff !important;
+    border: solid 1px #00a657 !important;
+}
+
+[lang="ar"].dropdown-item:hover .dropdown-item:focus,
+.dropdown-item:active {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #ffffff !important;
+    border: solid 1px #00a657 !important;
+}
+button {
+    font-family: "SourceSansPro-Regular";
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    border: none 1px #00a657 !important;
+}
+button:hover {
+    background-color: none !important;
+    /* border: solid 1px #00a657 !important; */
+}
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
+
+/* Navigation link styles */
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+}
+nav a:visited,
+a:link {
+    color: #607d8b;
+}
+nav a:hover {
+    color: #00a657;
+    background-color: #cfd8dc;
+}
+nav a.active {
+    color: #00a657;
+}
+
+.image {
+    position: relative;
+}
+.image img {
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover; 
+    background: rgba(0, 0, 0, 0.5);
+}
+.image:after {
+    content: "\A";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s; */
+}
+.image:hover:after {
+    opacity: 0.4;
+}
+
+/* everywhere else */
+/* * {
+    font-family: 'Droid Arabic Kufi';
+}
+::ng-deep [lang="en"]  body {
+    font-family: "Source Sans Pro",sans-serif !important;
+    color:  red !important;
+} */
+/* ::ng-deep [lang="en"] * {
+    font-family:"SourceSansPro-Regular", sans-serif, 'DroidArabicKufiRegular',"Droid Arabic Kufi" 
+} */
+/* * {
+    font-family: "SourceSansPro-Regular", Arial, Helvetica, sans-serif, "Droid Arabic Kufi";
+} */
+/* :host ::ng-deep [lang="en"] *{
+    font-family:"Droid Arabic Kufi","SourceSansPro-Regular", Arial, Helvetica, sans-serif ;
+} */
+/* ::ng-deep [lang="en"] body{
+    font-family: "SourceSansPro-Regular", Arial, Helvetica, sans-serif, "Droid Arabic Kufi";
+} */
+/* ::ng-deep [lang="en"] * {
+    font-family: "SourceSansPro-Regular", Arial, Helvetica, sans-serif, "Droid Arabic Kufi";
+} */
+/* .rtl {
+    font-family: 'DroidArabicKufiRegular',"Droid Arabic Kufi" !important;
+} */
+/* * {
+ 
+    font-family: "SourceSansPro-Regular",Arial, Helvetica, sans-serif, "Droid Arabic Kufi",   !important;
+} */
+/* 
+* {
+ 
+    font-family: "Droid Arabic Kufi","SourceSansPro-Regular",Arial, Helvetica, sans-serif,  !important;
+} */
+
+/* :host ::ng-deep * {
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+}
+:host ::ng-deep *:before,
+*:after, *:active,*:hover, *:focus {
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+} */
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    outline: none !important;
+}
+[lang="ar"] body {
+    font-family: "Droid Arabic Kufi";
+    /* direction: 'rtl';
+    text-align:right; */
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.93;
+    letter-spacing: normal;
+}
+[lang="en"] body {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.93;
+    letter-spacing: normal;
+}
+/* [lang="ar"] .our_services_container11 { */
+    /* padding: 0 35px !important; */
+/* } */
+/* [lang="ar"] .we-work-head {
+    max-width: 22% !important;
+} */

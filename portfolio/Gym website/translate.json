@@ -1,0 +1,236 @@
+{
+    "home1":{
+    "en":"Home",
+    "ar":"بيت"
+    },
+    "fitsutra":{
+     "en" : "FitSutra",
+     "ar" : "فيتسوترا"
+    },
+    "about1":{
+    "en":"About",
+    "ar":"عن"   
+    },
+    "services1":{
+    "en":"Services",
+     "ar":"خدمات"  
+     },
+     "schedule1":{
+    "en":"Schedule",
+    "ar":"جدول"
+    },
+    "price1":{
+    "en":"Price",
+    "ar":"سعر"  
+     },
+    "contact1":{
+    "en":"Contact",
+    "ar":"اتصال"  
+    },
+    "its":{
+     "en":"It's",
+     "ar":"انها"  
+    },
+
+    "gym1":{
+        "en":"gym",
+        "ar":"الجمنازيوم"  
+    },
+    "fit":{
+        "en":"fit",
+        "ar":"لائق" 
+    },
+    "you":{
+        "en":"you",
+        "ar":"أنت" 
+    },
+    "ready1":{
+        "en":"We are ready to",
+        "ar":"نحن مستعدون ل" 
+    },
+    "go1":{
+        "en":"Let's go",
+        "ar":"لنذهب" 
+    },
+    "time1":{
+        "en":"time",
+        "ar":"الوقت" 
+    },
+    "club":{
+        "en":"Club",
+        "ar":"ناد" 
+    },
+    "about-us":{
+        "en":"About Us",
+        "ar":"من نحن" 
+    },
+    "title-1":{
+        "en":"Free Consultation",
+        "ar":"استشارة مجانية" 
+    },
+    "title-2":{
+        "en":"Best Training",
+        "ar":"أفضل تدريب" 
+    },
+    "title-3":{
+        "en":"Build Perfect Body",
+        "ar":"بناء الجسم المثالي" 
+    },
+    "blog1":{
+        "en":"Unlock your fitness journey with a complimentary consultation! Our experienced trainers will assess your goals and create a personalized plan tailored just for you. Whether you're a beginner or a seasoned athlete, we’re here to guide you every step of the way.Take the first step toward achieving fitness",
+        "ar":"أطلق العنان لرحلة لياقتك البدنية مع استشارة مجانية! سيقوم المدربون ذوو الخبرة لدينا بتقييم أهدافك وإنشاء خطة مخصصة مصممة خصيصا لك. سواء كنت مبتدئا أو رياضيا متمرسا ، فنحن هنا لإرشادك في كل خطوة على الطريق. اتخذ الخطوة الأولى نحو تحقيق اللياقة البدنية" 
+    },
+    "blog2":{
+        "en":"Experience the difference with our expert training programs! Our certified trainers are dedicated to helping you achieve your fitness goals through personalized workout plans and motivation. Whether you're looking to build strength, improve endurance, or enhance flexibility, we offer the best training tailored just for you",
+        "ar":"جرب الفرق مع برامج تدريب الخبراء لدينا! يكرس المدربون المعتمدون لدينا جهودهم لمساعدتك في تحقيق أهداف اللياقة البدنية الخاصة بك من خلال خطط التمرين الشخصية والتحفيز. سواء كنت تبحث عن بناء القوة أو تحسين القدرة على التحمل أو تعزيز المرونة ، فنحن نقدم أفضل تدريب مصمم خصيصا لك" 
+    },
+    "blog3": {
+        "en":"Transform your physique with our specialized programs designed to help you build the perfect body! Our expert trainers provide personalized guidance, ensuring you follow the right techniques and nutrition plans tailored to your goals. Whether you're aiming for muscle gain, fat loss, or overall fitness",
+        "ar":"حول لياقتك البدنية من خلال برامجنا المتخصصة المصممة لمساعدتك على بناء الجسم المثالي! يقدم المدربون الخبراء لدينا إرشادات شخصية ، مما يضمن لك اتباع التقنيات الصحيحة وخطط التغذية المصممة خصيصا لأهدافك. سواء كنت تهدف إلى اكتساب العضلات أو فقدان الدهون أو اللياقة البدنية بشكل عام "
+    },
+    "services": {
+      "en": "Our Service",
+      "ar":"خدمات"
+    },
+    "service-1": {
+        "en": "At our gym, we offer a range of services tailored to meet your fitness needs, including personal training, group classes, and nutrition coaching. Our expert team is committed to helping you achieve your goals through customized programs and ongoing support.",
+        "ar":"في صالة الألعاب الرياضية لدينا ، نقدم مجموعة من الخدمات المصممة خصيصا لتلبية احتياجات اللياقة البدنية الخاصة بك ، بما في ذلك التدريب الشخصي والفصول الجماعية والتدريب على التغذية. يلتزم فريق الخبراء لدينا بمساعدتك في تحقيق أهدافك من خلال برامج مخصصة ودعم مستمر "
+    },
+    "service-2": {
+        "en":"Additionally, we offer nutrition coaching to help you make informed choices for optimal health. Experience a comprehensive approach to fitness that empowers you to reach your goals effectively!",
+        "ar":"بالإضافة إلى ذلك ، نقدم تدريبا على التغذية لمساعدتك على اتخاذ خيارات مستنيرة للصحة المثلى. جرب نهجا شاملا للياقة البدنية يمكنك من الوصول إلى أهدافك بفعالية!"
+    },
+    "btn": {
+        "en":"Start Now",
+        "ar":"ابدأ الآن"
+    },
+    "accord-title1": {
+        "en": "Cardiovascular Equipment",
+        "ar":"معدات القلب والأوعية الدموية"
+    },
+    "accord-title2": {
+        "en": "Strength Training Equipment",
+        "ar":"معدات تدريب القوة"
+    },
+    "accord-title3": {
+        "en": "Group Fitness Class",
+        "ar":"فئة اللياقة البدنية الجماعية"
+    },
+    "accord-title4": {
+        "en": "Other Services",
+        "ar":" خدمات أخرى"
+    },
+    "accord1": {
+        "en": "Our gym features state-of-the-art cardiovascular equipment to enhance your fitness experience and elevate your workouts. From treadmills and ellipticals to stationary bikes and rowing machines, we provide a variety of options to suit all fitness levels. Each machine is designed to help you improve endurance, burn calories, and achieve your heart health goals.",
+        "ar":"تتميز صالة الألعاب الرياضية لدينا بأحدث معدات القلب والأوعية الدموية لتعزيز تجربة لياقتك البدنية ورفع مستوى التدريبات الخاصة بك. من المطاحن والبيضاوي إلى الدراجات الثابتة وآلات التجديف ، نقدم مجموعة متنوعة من الخيارات لتناسب جميع مستويات اللياقة البدنية. تم تصميم كل جهاز لمساعدتك على تحسين القدرة على التحمل وحرق السعرات الحرارية وتحقيق أهداف صحة قلبك."
+    },
+    "accord2": {
+        "en":"Our gym is equipped with top-of-the-line strength training equipment to help you build muscle and increase your strength effectively. From free weights and resistance machines to functional training tools, we offer everything you need for a comprehensive workout.",
+        "ar":"تم تجهيز صالة الألعاب الرياضية لدينا بأحدث معدات تدريب القوة لمساعدتك على بناء العضلات وزيادة قوتك بشكل فعال. من الأوزان الحرة وآلات المقاومة إلى أدوات التدريب الوظيفية ، نقدم كل ما تحتاجه لممارسة تمرين شامل."
+    },
+    "accord3": {
+        "en":"Join our dynamic group fitness classes and experience the energy of working out with others! From high-intensity interval training (HIIT) to yoga and dance, we offer a diverse range of classes to suit all interests and fitness levels. Our certified instructors provide expert guidance, ensuring you stay motivated and challenged throughout each session.",
+        "ar":"انضم إلى فصول اللياقة البدنية الجماعية الديناميكية واختبر طاقة التمرين مع الآخرين! من التدريب المتقطع عالي الكثافة (HIIT) إلى اليوغا والرقص ، نقدم مجموعة متنوعة من الفصول لتناسب جميع الاهتمامات ومستويات اللياقة البدنية. يقدم المدربون المعتمدون لدينا إرشادات الخبراء ، مما يضمن لك البقاء متحمسا وتحديا طوال كل جلسة."
+    },
+    "accord4": {
+        "en":"In addition to our core offerings, we provide a variety of other services to enhance your fitness journey. Enjoy amenities like nutrition workshops, wellness coaching, and personalized fitness assessments to help you stay on track.",
+        "ar":"بالإضافة إلى عروضنا الأساسية ، نقدم مجموعة متنوعة من الخدمات الأخرى لتعزيز رحلة لياقتك. استمتع بوسائل الراحة مثل ورش عمل التغذية والتدريب الصحي وتقييمات اللياقة البدنية الشخصية لمساعدتك على البقاء على المسار الصحيح."
+    },
+    "class": {
+        "en":"Our Classes",
+        "ar":"فئات"
+    },
+    "class1": {
+        "en":" Classes",
+        "ar":"فئات"
+    },
+    "train": {
+        "en":"Explore our diverse range of classes designed to cater to all fitness levels and preferences! From invigorating cardio sessions and strength training to calming yoga and Pilates, we have something for everyone. Our experienced instructors lead each class, providing guidance and motivation to help you reach your goals.",
+        "ar":"استكشف مجموعتنا المتنوعة من الفصول المصممة لتلبية جميع مستويات اللياقة البدنية والتفضيلات! من جلسات القلب المنشطة وتدريب القوة إلى اليوغا المهدئة والبيلاتس ، لدينا شيء للجميع. يقود المدربون ذوو الخبرة لدينا كل فصل ، ويقدمون التوجيه والتحفيز لمساعدتك في الوصول إلى أهدافك."
+    },
+    "train1": {
+        "en":"Enhance your flexibility and recovery with our dedicated stretching training sessions! Our expert instructors guide you through targeted stretches",
+        "ar":"عزز مرونتك وتعافيك من خلال جلسات تدريب الإطالة المخصصة لدينا! يرشدك المدربون الخبراء لدينا خلال فترات الإطالة المستهدفة"
+    },
+    "train2": {
+        "en":"Unlock your body’s potential with our specialized stretching training sessions!",
+        "ar":"أطلق العنان لإمكانات جسمك من خلال جلسات التدريب المتخصصة على الإطالة!"
+    },
+    "train1_title": {
+        "en":"Stretching Training",
+        "ar":"تدريب التمدد"
+    },
+    "detail": {
+        "en":"Get Details",
+        "ar":"الحصول على التفاصيل"
+    },
+    "start_title": {
+        "en":"Start Your Training Today",
+        "ar":"ابدأ تدريبك اليوم"
+    },
+    "start_para": {
+        "en":"Don’t wait any longer to embark on your fitness journey—start your training today! Our dedicated team is ready to guide you through personalized workouts tailored to your goals and needs. With state-of-the-art facilities and a supportive community, you’ll find everything you need to succeed",
+        "ar":"لا تنتظر أكثر من ذلك للشروع في رحلة لياقتك البدنية - ابدأ تدريبك اليوم! فريقنا المتفاني جاهز لإرشادك خلال التدريبات الشخصية المصممة خصيصا لأهدافك واحتياجاتك. مع أحدث المرافق والمجتمع الداعم ، ستجد كل ما تحتاجه للنجاح"
+    },
+    "start_btn": {
+        "en":"Start Now",
+        "ar":"ابدأ الآن"
+    },
+    "workout": {
+        "en":"Workout Gallery",
+        "ar":"معرض التمارين الرياضية"
+    },
+    "price_t": {
+        "en":"Choose Price",
+        "ar":"اختر السعر"
+    },
+    "price_st": {
+        "en":"Choose Your Package",
+        "ar":"اختر باقتك"
+    },
+    "price_p": {
+        "en":"Explore our flexible membership options and choose the package that best suits your fitness goals! Whether you’re looking for individual training, group classes, or a combination of both, we have a variety of packages tailored to meet your needs.",
+        "ar":"استكشف خيارات العضوية المرنة لدينا واختر الباقة التي تناسب أهداف لياقتك! سواء كنت تبحث عن تدريب فردي أو فصول جماعية أو مزيج من الاثنين ، فلدينا مجموعة متنوعة من الحزم المصممة خصيصا لتلبية احتياجاتك."
+    },
+    "month": {
+        "en":"Month",
+        "ar":"شهر"
+    },
+    "card_t": {
+        "en":"Body Building Training",
+        "ar":"تدريب كمال الأجسام"
+    },
+    "card_p1": {
+        "en":"Get Free WiFi",
+        "ar":"احصل على واي فاي مجاني"
+    },
+    "card_p2": {
+        "en":"Month to Month",
+        "ar":"من شهر إلى شهر"
+    },
+    "card_p3": {
+        "en":"No Time Restrictions",
+        "ar":"لا قيود زمنية"
+    },
+    "card_p4": {
+        "en":"Gym and Cardio",
+        "ar":"الصالة الرياضية والقلب"
+    },
+    "card_p5": {
+        "en":"Service Locker Rooms",
+        "ar":"غرف خلع الملابس الخدمة"
+    },
+    "card_btn": {
+        "en":"Join Now",
+        "ar":"اشترك الآن"
+    },
+    "contact_t": {
+        "en":"Get Connected with Gym",
+        "ar":"تواصل مع صالة الألعاب الرياضية"
+    },
+    "contact_p": {
+        "en":"Stay in touch and become part of our vibrant fitness community! Follow us on social media and subscribe to our newsletter for the latest updates on classes, promotions, and fitness tips. We’re here to support you on your journey, so feel free to reach out with any questions or feedback.",
+        "ar":"ابق على اتصال وكن جزءا من مجتمع اللياقة البدنية النابض بالحياة! تابعنا على وسائل التواصل الاجتماعي واشترك في النشرة الإخبارية للحصول على آخر التحديثات حول الفصول والعروض الترويجية ونصائح اللياقة البدنية. نحن هنا لدعمك في رحلتك ، لذلك لا تتردد في التواصل مع أي أسئلة أو ملاحظات."
+    }
+  
+}

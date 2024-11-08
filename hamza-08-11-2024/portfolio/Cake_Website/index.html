@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Factory</title>
+    <link rel="shortcut icon" type="image" href="./image/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <div class="all-content">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md" id="navbar">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#" id="logo"><img src="./image/logo.png" alt="" width="50px">Cake Factory</a>
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span><img src="./image/menu.png" alt="" width="30px"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <!-- dropdown -->
+                <!-- <li class="nav-item dropdown">
+                    <a href="#category" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                     Category -->
+            
+                    <!-- <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Birthday Cake</a>
+                        <a href="#" class="dropdown-item">Chocolate Cake</a>
+                        <a href="#" class="dropdown-item">Party Cake</a>
+                        <a href="#" class="dropdown-item">Slice Cake</a>
+                        <a href="#" class="dropdown-item">Cup Cake</a>
+                    </div> -->
+                      <!-- </a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#category">Category</a>
+                  </li>
+                
+                <!-- dropdown -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="icons">
+                <img src="./image/user.png" alt="" width="30px">
+                <img src="./image/heart.png" alt="" width="30px">
+                <img src="./image/add.png" alt="" width="29px">
+            </div>
+          </nav>
+        <!-- navbar end -->
+      
+
+
+        <!-- home section -->
+        <div class="home" id="home">
+            <div class="content" data-aos="zoom-out-right">
+                <h3>Delicious
+                    <br>Cake Factory
+                </h3>
+                <h2>Category <span class="changecontent"></span></h2>
+                <p>Delicious Cake Factory is dedicated to creating exquisite custom cakes for every occasion. With a wide range of flavors and stunning designs, we ensure each cake is a delightful centerpiece for celebrations.
+                    </p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+            <div class="img"  data-aos="zoom-out-left">
+                <img src="./image/background.png" alt="">
+            </div>
+        </div>
+        <!-- home section end -->
+
+      <!-- top cards -->
+      <div class="container" id="box"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="row">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/backgro.png" class="bimg" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/box2.jpg" class="bimg" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/box3.jpg" class="bimg" alt="">
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- top cards end -->
+
+      <!-- banner -->
+        <div class="banner"    data-aos="fade-up"
+        data-aos-duration="1500">
+            <div class="content">
+                <h3>Delicious Cake</h3>
+                <h2>UPTO 40% OFF</h2>
+                <p>Indulge in our delicious cakes! Enjoy up to 40% off your favorite flavors today!</p>
+                <div id="btnorder"><button>Order Now</button></div>
+            </div>
+            <div class="img">
+                <img src="./image/banner-background.png" alt="">
+            </div>
+        </div>
+      <!-- banner end -->
+
+      <!-- product cards -->
+      <section id="product-cards"   data-aos="fade-up" data-aos-duration="1500">
+        <div class="container" id="category">
+            <h1>CAKES</h1>
+            <div class="row" style="margin-top:50px;">
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                    </div>
+                    <img src="./image/backgro.png" class="cimg" alt="">
+                    <div class="card-body">
+                        <h3>Cream Cake</h3>
+                        <div class="star">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star "></i>
+                          <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Cream cake features a moist texture and is topped with luscious cream, ideal for special occasions!</p>
+                        <h6>Rs. 340 <span><button>Add Cart</button></span></h6>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                    </div>
+                    <img src="./image/choco.png" class="cimg" alt="">
+                    <div class="card-body">
+                        <h3>Choco Cake</h3>
+                        <div class="star">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star "></i>
+                          <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Choco cake is rich and indulgent, featuring layers of chocolate goodness, perfect for chocolate lovers!</p>
+                        <h6>Rs. 75 <span><button>Add Cart</button></span></h6>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                    </div>
+                    <img src="./image/slice.png" class="cimg" alt="">
+                    <div class="card-body">
+                        <h3>Slice Cake</h3>
+                        <div class="star">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star "></i>
+                        </div>
+                        <p>Slice Cake is a delicious dessert, perfect for celebrations and gatherings, bringing joy with every bite!</p>
+                        <h6>Rs. 95<span><button>Add Cart</button></span></h6>
+                    </div>
+                </div>
+               </div>
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                    </div>
+                    <img src="./image/fruit.png" class="cimg" alt="">
+                    <div class="card-body">
+                        <h3>Fruit Cake</h3>
+                        <div class="star">
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                          <i class="bx bxs-star checked"></i>
+                        </div>
+                        <p>Fruit cake is a dense, flavorful dessert packed with dried fruits and nuts, perfect for celebrations!</p>
+                        <h6>Rs. 650 <span><button>Add Cart</button></span></h6>
+                    </div>
+                </div>
+               </div>
+            </div>
+
+
+
+
+
+
+            <div class="row" style="margin-top:50px;"    data-aos="fade-up"
+            data-aos-duration="1500">
+                <div class="col-md-3 py-3 py-md-0">
+                 <div class="card">
+                     <div class="overlay">
+                         <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                     </div>
+                     <img src="./image/broun.png" class="cimg" alt="">
+                     <div class="card-body">
+                         <h3>Brown Cake</h3>
+                         <div class="star">
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star "></i>
+                           <i class="bx bxs-star "></i>
+                         </div>
+                         <p>Brown cake is a rich, moist dessert made with cocoa or chocolate, often enjoyed with creamy frosting or a dusting of powdered sugar.</p>
+                         <h6>Rs. 449 <span><button>Add Cart</button></span></h6>
+                     </div>
+                 </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                 <div class="card">
+                     <div class="overlay">
+                         <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                     </div>
+                     <img src="./image/strawberrey.png" class="cimg" alt="">
+                     <div class="card-body">
+                         <h3>Strawberry Cake</h3>
+                         <div class="star">
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star "></i>
+                           <i class="bx bxs-star "></i>
+                         </div>
+                         <p>Strawberry cake is light and fruity, featuring fresh strawberries and creamy frosting, perfect for celebrations!</p>
+                         <h6>Rs. 339 <span><button>Add Cart</button></span></h6>
+                     </div>
+                 </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                 <div class="card">
+                     <div class="overlay">
+                         <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                     </div>
+                     <img src="./image/red.png" class="cimg" alt="">
+                     <div class="card-body">
+                         <h3>Red Velvet Cake</h3>
+                         <div class="star">
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star "></i>
+                         </div>
+                         <p>Red velvet cake is a moist, cocoa-flavored dessert known for its striking red color, often paired with rich cream cheese frosting.</p>
+                         <h6>Rs. 649 <span><button>Add Cart</button></span></h6>
+                     </div>
+                 </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                 <div class="card">
+                     <div class="overlay">
+                         <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                         <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                     </div>
+                     <img src="./image/vanilla1.png" class="cimg" alt="">
+                     <div class="card-body">
+                         <h3>Choco Cake</h3>
+                         <div class="star">
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                           <i class="bx bxs-star checked"></i>
+                         </div>
+                         <p>Vanilla cake is a classic, light, and fluffy dessert made with pure vanilla extract, perfect for layering and pairing with various frostings and fillings.</p>
+                         <h6>Rs. 349 <span><button>Add Cart</button></span></h6>
+                     </div>
+                 </div>
+                </div>
+             </div>
+        </div>
+      </section>
+
+
+      <section id="product-cards"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="container">
+            <h1>Cakes For Kids</h1>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                             <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="./image/kids1.png" class="kimg" alt="">
+                        <div class="card-body">
+                            <h3>Panda cake</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p>Kids Panda Cake is a cute, fun dessert, perfect for children's parties and celebrations!</p>
+                            <h6>Rs. 449<span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                             <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="./image/kids2.png" class="kimg" alt="">
+                        <div class="card-body">
+                            <h3>White Cake</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p>Experience our delicious white cake, light and fluffy, perfect for any celebration!</p>
+                            <h6>Rs. 340 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                             <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="./image/kids3.png" class="kimg" alt="">
+                        <div class="card-body">
+                            <h3>Doll Cake</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p>Celebrate with our adorable doll cake, delicious and beautifully designed!</p>
+                            <h6>Rs. 650 <span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
+                            <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
+                             <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                        </div>
+                        <img src="./image/kids5.png" class="kimg" alt="">
+                        <div class="card-body">
+                            <h3>Car Cake</h3>
+                            <div class="star">
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                                <i class="bx bxs-star checked"></i>
+                            </div>
+                            <p>Drive your celebration forward with our delicious car cake, perfect for all occasions!</p>
+                            <h6>Rs. 549<span><button>Add Cart</button></span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- product cards end-->
+
+
+      <!-- gallary -->
+      <section id="gallery"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <div class="container">
+            <h1 class="gallery">OUR GALLARY</h1>
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Donuts</h3>
+                        </div>
+                        <img src="./image/o1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Ice Cream</h3>
+                        </div>
+                        <img src="./image/o2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Cup Cake</h3>
+                        </div>
+                        <img src="./image/o3.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" style="margin-top: 30px;"    data-aos="fade-up"
+            data-aos-duration="1500">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Delicious Cake</h3>
+                        </div>
+                        <img src="./image/o4.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Chocolate Cake</h3>
+                        </div>
+                        <img src="./image/o5.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <div class="overlay">
+                            <h3 class="text-center">Slice Cake</h3>
+                        </div>
+                        <img src="./image/o6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- gallary -->
+
+
+
+      <!-- about -->
+      <div class="container" id="about"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1>ABOUT US</h1>
+        <div class="row">
+            <div class="col-md-6 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/about.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 py-3 py-md-0">
+                    <p>A cake factory specializes in the mass production of a wide variety of cakes, blending traditional baking techniques with modern technology for efficiency and consistency. These facilities produce an array of flavors, from classic vanilla and rich chocolate to seasonal specialties like pumpkin or fruit cakes, catering to diverse tastes and occasions.
+
+                        Emphasizing high-quality ingredients, cake factories often source premium flour, cocoa, and fresh fruits. Many also offer customization options for events like weddings and birthdays, allowing customers to create personalized designs. Rigorous quality control measures ensure freshness and flavor. Some factories even feature tasting rooms, where customers can sample offerings before placing bulk orders. By combining creativity with efficiency, cake factories play an essential role in making celebrations sweeter and more memorable.</p>                
+
+                <div id="bt"><button>Read More...</button></div>
+            </div>
+        </div>
+      </div>
+      <!-- about -->
+
+
+      <!-- contact  -->
+      <div class="container" id="contact"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1>CONTACT US</h1>
+        <div class="row">
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usr" placeholder="Name">
+                </div>
+            </div>
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="eml" placeholder="Email">
+                </div>
+            </div>
+            <div class="col-md-4 py-1 py-md-0">
+                <div class="form-group">
+                    <input type="number" class="form-control" id="phn" placeholder="Phone">
+                </div>
+            </div>
+            
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+        </div>
+        <div id="messagebtn"><button>Send Message</button></div>
+      </div>
+      <!-- contact end -->
+
+
+      <!-- footer -->
+      <footer id="footer"    data-aos="fade-up"
+      data-aos-duration="1500">
+        <h1 class="text-center">Cake Factory</h1>
+        <p class="text-center">A cake factory specializes in producing a variety of delicious cakes.</p>
+        <div class="icons text-center">
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-skype"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+        <div class="copyright text-center">
+            &copy; Copyright <strong>Cake Factory</strong> .All Rights Reserved
+        </div>
+        <div class="credite text-center">
+            Designed By <a href="#"><span>Aerobyte Innovations.</span></a>
+        </div>
+      </footer>
+      <!-- footer -->
+
+      <a href="#" class="arrow"><i><img src="./image/up-arrow.png" alt="" width="50px"></i></a>
+
+
+
+    </div>
+
+
+<!-- 
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script> -->
+</body>
+</html>

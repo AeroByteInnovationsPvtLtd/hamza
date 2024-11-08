@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital management website</title>
+    <link rel="icon" href="/images/hospital-logo-and-symbols-template-icons-vector-removebg-preview.png" type="image/png">
+    <script src="https://kit.fontawesome.com/c1df782baf.js"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+<body>
+
+    <header>
+        
+        <div class="logo"><img src="images/logo3.png" alt=""></div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#spacialties">Spacialties</a>
+            <a href="#services">Service</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#review">Blog</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="right-icons">
+            <div id="menu-bars" class="fas fa-bars"></div>
+            <button class="btn appointment-btn" onclick="openPopup()">Make Appointment</button>
+        </div>
+    </header>
+
+    <!-- header section ended -->
+    <div class="popup-bg" id="popup-bg">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup()">X</button>
+            <h2>Book an Appointment</h2>
+            
+            <form id="appointmentForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit" id="bookbtn">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <div class="main-home" id="home">
+
+            <div class="home">
+                <div class="home-left-content">
+                    <span>welcome to Doctery Hospital.</span>
+                    <h2>We take care our<br> Patients Healths</h2>
+                    <p class="lorem">Where expert medical care meets compassionate service. We are dedicated to ensuring the health and well-being of every patient with personalized treatment and state-of-the-art facilities.</p>
+                
+                        <div class="home-btn">
+                            <a href="#about">Read More</a>
+                            <a class="homebtnsec btn appointment-btn"onclick="openPopup()">Make Appointment</a>
+                        </div>
+                        
+                    </div>
+
+                <div class="home-right-content">
+                    <img src="images/hero2-transformed.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="technology">
+            <div class="main-technology">
+                
+                <div class="inner-technology">
+                    <span></span>
+                    <i class="fi fi-tr-hands-heart"></i>
+                    <h2>Expert Care & Compassion</h2>
+                    <p>We prioritize patient-centered care, combining compassion with advanced medical expertise to ensure optimal health outcomes.</p>
+                </div>
+        
+                <div class="inner-technology">
+                    <span></span>
+                    <i class="fi fi-rr-doctor"></i>
+                    <h2>Experienced Specialists</h2>
+                    <p>Our team of specialists brings years of experience and dedication to delivering high-quality medical care for every patient.</p>
+                </div>
+        
+                <div class="inner-technology">
+                    <span></span>
+                    <i class="fi fi-tr-user-md"></i>
+                    <h2>Advanced Technology</h2>
+                    <p>We use the latest medical technology to provide accurate diagnoses, effective treatments, and enhanced patient safety.</p>
+                </div>
+            </div>
+        </div>
+        
+
+        
+
+    <!-- home section ends -->
+
+    
+
+    <!-- our doctors -->
+
+        <div class="docters main-doctors" id="doctors">
+            <div class="doctors-heading">
+                <h2>Our Doctors</h2>
+            </div>
+
+            <div class="main-inner-doctor">
+                <div class="doc-poster">
+                    <div class="doc-icons">
+                        <i class="fa-solid fa-share"></i>
+                        <i class="fa-solid fa-eye"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="images/team1-transformed.jpeg" alt="">
+
+                    <div class="doc-details">
+                        <h2>Mr Joe</h2>
+                        
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+                <div class="doc-poster">
+                    <div class="doc-icons">
+                        <i class="fa-solid fa-share"></i>
+                        <i class="fa-solid fa-eye"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="images/team2-transformed.jpeg" alt="">
+                    <div class="doc-details">
+                        <h2>Mr Harry</h2>
+                        
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+
+                <div class="doc-poster">
+                    <div class="doc-icons">
+                        <i class="fa-solid fa-share"></i>
+                        <i class="fa-solid fa-eye"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="images/team3-transformed.jpeg" alt="">
+                    <div class="doc-details">
+                        <h2>Mrs Juliet</h2>
+                        
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+
+                <div class="doc-poster">
+                    <div class="doc-icons">
+                        <i class="fa-solid fa-share"></i>
+                        <i class="fa-solid fa-eye"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="images/team4-transformed.jpeg" alt="">
+                    <div class="doc-details">
+                        <h2>Mrs Emma</h2>
+                        
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+
+                <div class="doc-poster">
+                    <div class="doc-icons">
+                        <i class="fa-solid fa-share"></i>
+                        <i class="fa-solid fa-eye"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="images/team5-transformed.jpeg" alt="">
+                    <div class="doc-details">
+                        <h2>Mr James</h2>
+                        
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+
+                <div class="doc-poster">
+                    <div class="doc-icons">
+                        <i class="fa-solid fa-share"></i>
+                        <i class="fa-solid fa-eye"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="images/team6-transformed.jpeg" alt="">
+
+                    <div class="doc-details">
+                        <h2>Mrs Watson</h2>
+                        
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    <!-- our doctors ended -->
+
+    <!-- our services -->
+
+    <div class="our-service" id="services">
+        <div class="service-heading">
+            <h2>Services</h2>
+        </div>
+
+        <div class="main-services">
+            <div class="inner-services">
+                <div class="service-icon">
+                    <i class="fa-solid fa-truck-medical"></i>
+                </div>
+                <h3> Emergency Services</h3>
+                <p>Reliable 24/7 ambulance services providing swift medical assistance and emergency transportation for critical care patients.</p>
+            </div>
+
+            <div class="inner-services">
+                <div class="service-icon">
+                    <i class="fa-regular fa-hospital"></i>
+                </div>
+                <h3>Inpatient Care</h3>
+                <p>Comprehensive inpatient care offering personalized treatment, round-the-clock monitoring, and expert medical support for patients.</p>
+            </div>
+
+            <div class="inner-services">
+                <div class="service-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <h3>Outpatient Services</h3>
+                <p>Efficient outpatient services providing expert consultations, diagnostics, and treatments without the need for hospitalization.</p>
+            </div>
+
+            <div class="inner-services">
+                <div class="service-icon">
+                    <i class="fa-solid fa-notes-medical"></i>
+                </div>
+                <h3>Surgical Services</h3>
+                <p>Advanced surgical services offering minimally invasive procedures and expert care for faster recovery and optimal outcomes.</p>
+            </div>
+
+            <div class="inner-services">
+                <div class="service-icon">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+                <h3>Maternity Services</h3>
+                <p>Comprehensive maternity services offering prenatal care, safe delivery, and postnatal support for mother and baby.</p>
+            </div>
+
+            <div class="inner-services">
+                <div class="service-icon">
+                    <i class="fa-solid fa-user-doctor"></i>
+                </div>
+                <h3>Pediatrics</h3>
+                <p>Dedicated pediatric care providing specialized health services for infants, children, and adolescents in a nurturing environment.</p>
+            </div>
+
+            <div class="inner-services">
+                <div class="service-icon">
+                    <i class="fa-solid fa-user-doctor"></i>
+                </div>
+                <h3>Laboratory Services</h3>
+                <p>Accurate laboratory services delivering timely diagnostics through advanced testing for informed patient care decisions.</p>
+            </div>
+
+            <div class="inner-services">
+                <div class="service-icon">
+                    <i class="fa-solid fa-user-doctor"></i>
+                </div>
+                <h3>Pharmacy Services
+                </h3>
+                <p>Comprehensive pharmacy services ensuring safe medication management, expert consultations, and timely prescription fulfillment for patients.</p>
+            </div>
+
+            <div class="inner-services">
+                <div class="service-icon">
+                    <i class="fa-solid fa-user-doctor"></i>
+                </div>
+                <h3>Rehabilitation Services</h3>
+                <p>Tailored rehabilitation services providing physical, occupational, and speech therapy to support recovery and improve functionality.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- our services ended -->
+    <div class="our-service" id="spacialties">
+        <div class="service-heading">
+            <h2>Specialties</h2>
+        </div>
+
+        <div class="main-services">
+            <div class="inner-special">
+                <div class="service-icon">
+                    <i class="fa-solid "><img src="images/cardiology-removebg-preview-transformed.png" alt=""></i>
+                </div>
+                <h3> Cardiology</h3>
+                <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+            </div>
+
+            <div class="inner-special">
+                <div class="service-icon">
+                    <i class="fa-regular "><img src="images/neurology-logo-template-design-digital-brain-in-heart-shape-logo-design-free-vector-removebg-preview-transformed.png" alt=""></i>
+                </div>
+                <h3>Neurology</h3>
+                <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+            </div>
+
+            <div class="inner-special">
+                <div class="service-icon">
+                    <i class="fa-regular "><img src="images/gastroenterology-icon-stomach-icon-free-vector-removebg-preview-transformed.png" alt=""></i>
+                </div>
+                <h3>Gastroenterology</h3>
+                <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+            </div>
+
+            <div class="inner-special">
+                <div class="service-icon">
+                    <i class="fa-solid "><img src="images/health_check-transformed.png" alt=""></i>
+                </div>
+                <h3>Health Check</h3>
+                <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+            </div>
+
+            <div class="inner-special">
+                <div class="service-icon">
+                    <i class="fa-solid "><img src="images/orthopedic-transformed.png" alt=""></i>
+                </div>
+                <h3>Orthopedic</h3>
+                <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+            </div>
+
+            <div class="inner-special">
+                <div class="service-icon">
+                    <i class="fa-solid "><img src="images/gynacologist-transformed.png" alt=""></i>
+                </div>
+                <h3>Gynecology</h3>
+                <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+            </div>
+
+            <div class="inner-special">
+                <div class="service-icon">
+                    <i class="fa-solid "><img src="images/dentish-transformed.png" alt=""></i>
+                </div>
+                <h3>Dentistry</h3>
+                <p>We Dentistry extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+            </div>
+
+            <div class="inner-special">
+                <div class="service-icon">
+                    <i class="fa-solid "><img src="images/nanotechnology-transformed.png" alt=""></i>
+                </div>
+                <h3>Neonatology
+                </h3>
+                <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+            </div>
+
+            <div class="inner-special">
+                <div class="service-icon">
+                    <i class="fa-solid fa-user-doctor"></i>
+                </div>
+                <h3>Nephrology</h3>
+                <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+            </div>
+
+            <div class="inner-special">
+                <div class="service-icon">
+                    <i class="fa-solid "><img src="images/endocrinology-transformed.png" alt=""></i>
+                </div>
+                <h3>Endocrinology</h3>
+                <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+            </div>
+
+            <div class="inner-special">
+                <div class="service-icon">
+                    <i class="fa-solid "><img src="images/Ophthalmology-transformed.png" alt=""></i>
+                </div>
+                <h3>Ophthalmology</h3>
+                <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+            </div>
+
+            <div class="inner-special">
+                <div class="service-icon">
+                    <i class="fa-solid"><img src="images/Dermatology-transformed.png" alt=""></i>
+                </div>
+                <h3>Dermatology</h3>
+                <p>We offer extensive medical procedures to outbound & inbound patients what it is and we are very proud achievement staff.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About us section started -->
+    <section class="about" id="about">
+        <div class="main-about">
+
+            <div class="about-heading">About Us</div>
+
+            <div class="inner-main-about">
+                <div class="about-inner-content-left">
+                    <img src="images/about1-transformed.png" alt="">
+                </div>
+
+                <div class="about-inner-content">
+                    <div class="about-right-content">
+                        <h2>We're setting Standards in Research <br> what's more, Clinical Care.</h2>
+                        <p>We provide the most full medical services, so every person could have the pportunity 
+                         o receive qualitative medical help.</p>
+                        <p class="aboutsec-content">
+                            Our Clinic has grown to provide a world class facility for the treatment of tooth loss, dental cosmetics and bore advanced restorative dentistry. We are among
+                             the most qualified implant providers in the AUS with over 30 years of uality training and experience.
+                            </p>
+                            <button class="aboutbtn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About us section ends -->
+    <!-- customer review -->
+   
+        <div class="main-review" id="review">
+            <section class="review">
+            <div class="review-heading">
+                <h1>Our Customers Review</h1>
+            </div>
+
+            <div class="main-inner-review">
+
+                <div class="review-inner-content">
+
+                    <div class="review-box">
+                        <img src="images/pic1-transformed.png" alt="">
+
+                        <h2>Lara John</h2>
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+    
+                        <div class="review-text">
+                            <p>Excellent staff and care, from admission to discharge; I felt well-supported and confident in the treatment I received.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="review-box">
+                        <img src="images/pic2-transformed.png" alt="">
+
+                        <h2>Lara John</h2>
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+    
+                        <div class="review-text">
+                            <p>Amazing emergency services! Quick response and professional care saved my loved one’s life highly recommend this hospital.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="review-box">
+                        <img src="images/pic3-transformed.png" alt="">
+
+                        <h2>Lara John</h2>
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+    
+                        <div class="review-text">
+                            <p>Great pediatric care! The doctors are friendly, and my child was treated with compassion and expertise from start to finish.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        </div>
+    
+    <!-- customer review -->
+
+
+<div class="main-footer" id="contact">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>Doctery Hospital</h3>
+            <p>Providing exceptional healthcare and services to our community.</p>
+            <p>
+                <strong>Address:</strong> 123 Main Street, City, Country<br>
+                <strong>Email:<a href="mailto:hr@aerobyte.in"></strong> info@aerobyte.in<br></a>
+                <p><strong>Phone:</strong> +123-456-7890</p>
+            </p>
+        </div>
+        </div>
+
+        <div class="footer-section social-media">
+            <h4>Follow Us</h4>
+            <a href="https://aerobyte.in/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/aerobyte_innovations.ai/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/aerobyte-innovations/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2024 Dectery Hospital. All rights reserved.
+    </div>
+</div>
+<!-- footer ended -->
+
+        
+    <!-- footer ended -->
+
+
+    <script src="main.js"></script>
+
+    <!-- emailjs -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('rFM_4oJCWFxSsHe4A')
+  </script>
+  <script>
+  const btn = document.getElementById('bookbtn');
+
+document.getElementById('appointmentForm')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'service_ubqx65e';
+   const templateID = 'template_8p1z35o';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
+</body>
+</html>
